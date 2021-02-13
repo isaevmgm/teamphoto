@@ -1,6 +1,9 @@
 import {useDispatch} from "react-redux";
 import {useEffect} from "react";
 import {loadAlbums} from "../redux/actions";
+import Albums from "./Albums";
+import Photos from "./Photos";
+import {Route} from 'react-router-dom';
 
 function App() {
   const dispatch = useDispatch();
@@ -10,9 +13,18 @@ function App() {
   }, []);
 
   return (
-    <div>
-
-    </div>
+      <Route path="/:id?">
+        <div className="container">
+          <div className="row">
+            <div className="col-3">
+              <Albums />
+            </div>
+            <div className="col">
+              <Photos />
+            </div>
+          </div>
+        </div>
+      </Route>
   );
 }
 
