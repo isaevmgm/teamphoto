@@ -8,6 +8,6 @@ function Photo(props) {
             <img src={props.photo.thumbnailUrl} />
         </li>
     );
-}
+};
 
 export default Photo;

@@ -33,6 +33,6 @@ function Photos(props) {
             })}
         </ul>
     );
-}
+};
 
 export default Photos;
