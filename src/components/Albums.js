@@ -1,14 +1,16 @@
-import {Link, useParams} from 'react-router-dom'
-
+import {useSelector} from "react-redux";
+import Album from "./Album";
 
 function Albums(props) {
-    const openUserId = parseInt(useParams().id)
-    return(
-        <li className={`list-group-item ${openUserId === props.alb.id ? "list-group-item-info" : ""}`}>
-            <Link to={`/${props.alb.id}`}>
-                {props.alb.title}
-            </Link>
-        </li>
+    const albums = useSelector(state => state.albums.items)
+    return (
+                <ul className="list-group">
+                    {albums.map(alb => {
+                        return (
+                            <Album alb={alb} key={alb.id}/>
+                        )
+                    })}
+                </ul>
     )
 }
 export default Albums

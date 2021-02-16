@@ -1,7 +1,7 @@
 import {useDispatch} from "react-redux";
 import {useEffect} from "react";
 import {loadAlbums} from "../redux/actions";
-import Albums from "./Albums";
+import Album from "./Album";
 import Photos from "./Photos";
 import {Route} from 'react-router-dom';
 
@@ -18,7 +18,7 @@ function App() {
         <div className="container">
           <div className="row">
             <div className="col-3">
-              <Albums />
+              <Album />
             </div>
             <div className="col">
               <Photos />
