@@ -12,7 +12,7 @@ const logger = createLogger({
 const rootReducer = combineReducers({
     albums: albumsReducer,
     photos: photosReducer
-})
+});
 
 const store = createStore(rootReducer, applyMiddleware(thunk, logger));
 
