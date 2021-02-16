@@ -21,6 +21,6 @@ const photosReducer = (state = initialState, action) => {
         default:
             return state;
     }
-}
+};
 
 export default photosReducer;
