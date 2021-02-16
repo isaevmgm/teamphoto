@@ -13,7 +13,7 @@ export const loadAlbums = () => {
                 })
             })
     }
-}
+};
 
 export const loadPhotos = (id) => {
     return dispatch => {
@@ -30,4 +30,4 @@ export const loadPhotos = (id) => {
                 })
             })
     }
-}
+};
