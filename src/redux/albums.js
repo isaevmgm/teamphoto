@@ -9,7 +9,7 @@ const albumsReducer = (state = initialState, action) => {
             return {
                 ...state,
                 loading: true
-            }
+            };
 
         case 'albums/load/success':
             return {
@@ -20,7 +20,7 @@ const albumsReducer = (state = initialState, action) => {
 
         default:
             return state;
-    }
-}
+    };
+};
 
 export default albumsReducer;
