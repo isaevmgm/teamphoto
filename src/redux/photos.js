@@ -1,7 +1,7 @@
 const initialState = {
     items: [],
     loading: false
-}
+};
 
 const photosReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -20,7 +20,7 @@ const photosReducer = (state = initialState, action) => {
 
         default:
             return state;
-    }
+    };
 };
 
 export default photosReducer;
