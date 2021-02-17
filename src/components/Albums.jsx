@@ -5,9 +5,9 @@ function Albums(props) {
     const albums = useSelector(state => state.albums.items)
     return (
                 <ul className="list-group">
-                    {albums.map(alb => {
+                    {albums.map(album => {
                         return (
-                            <Album alb={alb} key={alb.id}/>
+                            <Album album={album} key={album.id}/>
                         )
                     })}
                 </ul>
