@@ -1,4 +1,5 @@
 import {Link, useParams} from 'react-router-dom'
+import PropTypes from "prop-types"
 
 
 function Album(props) {
@@ -10,5 +11,8 @@ function Album(props) {
             </Link>
         </li>
     )
+}
+     Album.propTypes = {
+          album : PropTypes.object.isRequired
 }
 export default Album
